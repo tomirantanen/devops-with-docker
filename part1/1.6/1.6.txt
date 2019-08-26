@@ -1,0 +1,17 @@
+> docker build -t docker-clock .
+Sending build context to Docker daemon  3.584kB
+Step 1/2 : FROM devopsdockeruh/overwrite_cmd_exercise
+ ---> 0f7f459b76c9
+Step 2/2 : CMD [ "-c" ]
+ ---> Running in e275ad9ac799
+Removing intermediate container e275ad9ac799
+ ---> d884e4c3c3b8
+Successfully built d884e4c3c3b8
+Successfully tagged docker-clock:latest
+
+> docker run --rm -it docker-clock
+1
+2
+3
+4
+5

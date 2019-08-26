@@ -1,0 +1,5 @@
+> docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+24cb9c79f33a        nginx               "nginx -g 'daemon of…"   27 seconds ago      Exited (0) 13 seconds ago                       heuristic_hofstadter
+284998b111a3        postgres            "docker-entrypoint.s…"   31 seconds ago      Exited (0) 2 seconds ago                        elastic_jang
+4ecaeb313ff8        httpd               "httpd-foreground"       36 seconds ago      Up 35 seconds               80/tcp              fervent_shockley

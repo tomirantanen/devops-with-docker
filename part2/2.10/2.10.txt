@@ -1,0 +1,2 @@
+I added FRONT_URL: http://localhost environment variable for backend container in docker-compose to get CORS requests working.
+Also removed API_URL env from frontend dockerfile.

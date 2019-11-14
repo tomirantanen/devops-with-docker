@@ -1,0 +1,7 @@
+Image sizes before:
+Frontend 428MB
+Backend 331MB
+
+Image sizes after using node alpine:
+Frontend 235MB
+Backend 139MB

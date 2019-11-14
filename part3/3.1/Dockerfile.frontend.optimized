@@ -8,5 +8,5 @@ RUN apt-get update && apt-get -y install curl && \
 
 COPY . .
 RUN npm install
-EXPOSE 8000
+EXPOSE 5000
 CMD [ "npm", "start" ]

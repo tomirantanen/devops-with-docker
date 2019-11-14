@@ -1,0 +1,7 @@
+Image sizes before optimization when using "FROM node:12"
+Frontend 1.06GB
+Backend 967MB
+
+Images after changing to "FROM ubuntu:16.04" and optimizing
+Frontend 427MB
+Backend 331MB

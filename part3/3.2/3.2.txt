@@ -1,0 +1,5 @@
+Build:
+docker build -t yle .
+
+Run:
+docker run -it --rm -v $(pwd):/yle yle https://areena.yle.fi/1-4161453

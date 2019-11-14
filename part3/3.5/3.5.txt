@@ -1,0 +1,5 @@
+Build:
+docker build -t frontend-example .
+
+Run:
+docker run --rm -p 80:80 frontend-example

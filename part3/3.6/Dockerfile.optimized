@@ -1,0 +1,15 @@
+FROM alpine:3.10
+
+RUN addgroup -S youtube && \
+    adduser -S youtube -G youtube && \
+    apk --no-cache add curl python && \
+    curl -L https://yt-dl.org/downloads/latest/youtube-dl --create-dirs -o /app/youtube-dl && \
+    apk del curl && \
+    chmod a+rx /app && \
+    chmod a+rx /app/youtube-dl
+
+USER youtube
+
+WORKDIR /videos
+
+ENTRYPOINT ["/app/youtube-dl"]

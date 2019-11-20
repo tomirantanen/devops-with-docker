@@ -1,0 +1,13 @@
+I chose youtube-dl dockerfile from part2 docker-compose examples.
+The size of the image is 193MB before optimizations.
+
+I changed from ubuntu to alpine image, optimized the build steps and created a non-root user.
+Optimized image size is 46.3MB.
+
+Build:
+docker build - < Dockerfile.before -t youtube-before
+docker build - < Dockerfile.optimized -t youtube-optimized
+
+Run:
+docker run -v $(pwd):/mydir --rm youtube-before https://imgur.com/JY5tHqr
+docker run -v $(pwd):/videos --rm youtube-optimized https://imgur.com/JY5tHqr

@@ -1,0 +1,2 @@
+I chose to do part c)
+Build tool and instructions for use are in repository: https://github.com/tomirantanen/docker-builder
